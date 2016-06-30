@@ -175,7 +175,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Home
+            Startseite
           </a>
         </li>
       
@@ -185,7 +185,7 @@
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archives
+            Archiv
           </a>
         </li>
       
@@ -251,7 +251,7 @@
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-06-30T14:59:22+08:00" content="2016-06-30">
               2016-06-30
             </time>
@@ -350,36 +350,23 @@ sqlplus
 #就是登陆 oracle 了，执行完让你输入用户名密码
 #最后执行以上的查询命令。
 </code></pre><p>操作完成后发现，我的SID确实是XE，没有错啊！一脸懵逼，出去转了一圈，然后回来，突然发现，oracle 的 url 貌似不能像 Mysql一样指定参数，随后把XE后面的东西全部删掉了。那么为什么一开始会加呢，因为偷懒把之前的 Mysql的连接串直接cp 过来了。再启动程序，问题解决，下面附一张连接池的表。</p>
-<h3 id="连接池"><a href="#连接池" class="headerlink" title="连接池"></a>连接池</h3><table>
-<thead>
-<tr>
-<th style="text-align:center">数据库类型</th>
-<th style="text-align:center">连接池</th>
-<th style="text-align:center">连接驱动</th>
-<th style="text-align:center">Hibernate方言</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">Mysql</td>
-<td style="text-align:center">jdbc:mysql://localhost/dbname?characterEncoding=gb2312</td>
-<td style="text-align:center">com.mysql.jdbc.Driver</td>
-<td style="text-align:center">org.hibernate.dialect.MySQLDialect</td>
-</tr>
-<tr>
-<td style="text-align:center">Sql Server</td>
-<td style="text-align:center">jdbc:jtds:sqlserver://localhost:1433;DatabaseName=dbname</td>
-<td style="text-align:center">net.sourceforge.jtds.jdbc.Driver</td>
-<td style="text-align:center">org.hibernate.dialect.SQLServerDialect</td>
-</tr>
-<tr>
-<td style="text-align:center">Oracle</td>
-<td style="text-align:center">jdbc:oracle:thin:@localhost:1521:dbname</td>
-<td style="text-align:center">oracle.jdbc.driver.OracleDriver</td>
-<td style="text-align:center">org.hibernate.dialect.OracleDialect</td>
-</tr>
-</tbody>
-</table>
+<h3 id="连接池"><a href="#连接池" class="headerlink" title="连接池"></a>连接池</h3><blockquote>
+<p>Mysql 连接串</p>
+<hr>
+<pre><code>jdbc:mysql://localhost/dbname?characterEncoding=gb2312  
+com.mysql.jdbc.Driver  
+org.hibernate.dialect.MySQLDialect
+</code></pre><p>Sql Server  </p>
+<hr>
+<pre><code>jdbc:jtds:sqlserver://localhost:1433;DatabaseName=dbname  
+net.sourceforge.jtds.jdbc.Driver  
+org.hibernate.dialect.SQLServerDialect
+</code></pre><p>Oracle  </p>
+<hr>
+<pre><code>jdbc:oracle:thin:@localhost:1521:dbname  
+oracle.jdbc.driver.OracleDriver  
+org.hibernate.dialect.OracleDialect
+</code></pre></blockquote>
 
           
         
@@ -442,7 +429,7 @@ sqlplus
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Posted on</span>
+            <span class="post-meta-item-text">Veröffentlicht am</span>
             <time itemprop="dateCreated" datetime="2016-06-27T17:05:12+08:00" content="2016-06-27">
               2016-06-27
             </time>
@@ -566,7 +553,7 @@ sqlplus
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">posts</span>
+              <span class="site-state-item-name">Artikel</span>
             </a>
           </div>
 
@@ -613,7 +600,7 @@ sqlplus
 </div>
 
 <div class="powered-by">
-  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
