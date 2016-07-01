@@ -106,7 +106,9 @@ Nginx
 
 下载地址Nginx 1.8.0
 安装安装 Nginx 需要以下依赖环境，如果已安装过，请直接安装Nginx。
-安装环境依赖12345678910111213141516171819202122232425262728293031323334353637安装zlibwget http:">
+安装环境依赖安装zlibwget http://zlib.net/zlib-1.2.8.tar.gz
+tar -zxvf zlib-1.2.8.tar.gz
+cd zlib-">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Nginx配置">
 <meta property="og:url" content="http://yoursite.com/2016/06/27/Nginx配置/index.html">
@@ -133,8 +135,10 @@ Nginx
 
 下载地址Nginx 1.8.0
 安装安装 Nginx 需要以下依赖环境，如果已安装过，请直接安装Nginx。
-安装环境依赖12345678910111213141516171819202122232425262728293031323334353637安装zlibwget http:">
-<meta property="og:updated_time" content="2016-06-27T10:02:53.000Z">
+安装环境依赖安装zlibwget http://zlib.net/zlib-1.2.8.tar.gz
+tar -zxvf zlib-1.2.8.tar.gz
+cd zlib-">
+<meta property="og:updated_time" content="2016-07-01T09:15:51.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Nginx配置">
 <meta name="twitter:description" content="开发环境
@@ -159,7 +163,9 @@ Nginx
 
 下载地址Nginx 1.8.0
 安装安装 Nginx 需要以下依赖环境，如果已安装过，请直接安装Nginx。
-安装环境依赖12345678910111213141516171819202122232425262728293031323334353637安装zlibwget http:">
+安装环境依赖安装zlibwget http://zlib.net/zlib-1.2.8.tar.gz
+tar -zxvf zlib-1.2.8.tar.gz
+cd zlib-">
 
 
 
@@ -240,7 +246,7 @@ Nginx
             
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
             
-            Startseite
+            Home
           </a>
         </li>
       
@@ -250,7 +256,7 @@ Nginx
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
-            Archiv
+            Archives
           </a>
         </li>
       
@@ -313,7 +319,7 @@ Nginx
             <span class="post-meta-item-icon">
               <i class="fa fa-calendar-o"></i>
             </span>
-            <span class="post-meta-item-text">Veröffentlicht am</span>
+            <span class="post-meta-item-text">Posted on</span>
             <time itemprop="dateCreated" datetime="2016-06-27T17:05:12+08:00" content="2016-06-27">
               2016-06-27
             </time>
@@ -364,8 +370,33 @@ Nginx
 </table>
 <h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p><a href="http://nginx.org/download/nginx-1.8.1.tar.gz" target="_blank" rel="external">Nginx 1.8.0</a></p>
 <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>安装 Nginx 需要以下依赖环境，如果已安装过，请直接安装Nginx。</p>
-<h3 id="安装环境依赖"><a href="#安装环境依赖" class="headerlink" title="安装环境依赖"></a>安装环境依赖</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line">安装zlib</span><br><span class="line">wget http://zlib.net/zlib-1.2.8.tar.gz</span><br><span class="line">tar -zxvf zlib-1.2.8.tar.gz</span><br><span class="line">cd zlib-1.2.8</span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; install </span><br><span class="line"></span><br><span class="line">安装pcre</span><br><span class="line">wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.38.tar.gz</span><br><span class="line">tar -zxvf pcre-8.38.tar.gz</span><br><span class="line">cd pcre-8.38</span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; install </span><br><span class="line"></span><br><span class="line">安装openssl</span><br><span class="line">wget http://www.openssl.org/source/openssl-1.0.2g.tar.gz</span><br><span class="line">tar -zxvf popenssl-1.0.2g.tar.gz</span><br><span class="line">cd openssl-1.0.2g</span><br><span class="line">./configure</span><br><span class="line">make &amp;&amp; install</span><br><span class="line">```  </span><br><span class="line">### 安装Nginx</span><br><span class="line">```python`</span><br><span class="line">wget http://nginx.org/download/nginx-1.8.1.tar.gz</span><br><span class="line">tar -zxvf nginx-1.8.1.tar.gz</span><br><span class="line">cd nginx-1.8.1</span><br><span class="line">```  </span><br><span class="line">编译 Nginx 模块  </span><br><span class="line">``</span><br><span class="line">./configure --prefix=/usr/local/nginx \</span><br><span class="line">--sbin-path=/usr/local/nginx/nginx \   </span><br><span class="line">--conf-path=/usr/local/nginx/nginx.conf \  </span><br><span class="line">--pid-path=/usr/local/nginx/nginx.pid \  </span><br><span class="line">--with-http_ssl_module \  </span><br><span class="line">--with-pcre=/root/installTemp/pcre-8.38 \</span><br><span class="line">--with-zlib=/root/installTemp/zlib-1.2.8 \</span><br><span class="line">--with-openssl=/root/installTemp/openssl-1.0.2g</span><br></pre></td></tr></table></figure>
-<h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2>
+<h3 id="安装环境依赖"><a href="#安装环境依赖" class="headerlink" title="安装环境依赖"></a>安装环境依赖</h3><h4 id="安装zlib"><a href="#安装zlib" class="headerlink" title="安装zlib"></a>安装zlib</h4><pre><code>wget http://zlib.net/zlib-1.2.8.tar.gz
+tar -zxvf zlib-1.2.8.tar.gz
+cd zlib-1.2.8
+./configure
+make &amp;&amp; install 
+</code></pre><h4 id="安装pcre"><a href="#安装pcre" class="headerlink" title="安装pcre"></a>安装pcre</h4><pre><code>wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/    pcre-8.38.tar.gz
+tar -zxvf pcre-8.38.tar.gz
+cd pcre-8.38
+./configure
+make &amp;&amp; install 
+</code></pre><h4 id="安装openssl"><a href="#安装openssl" class="headerlink" title="安装openssl"></a>安装openssl</h4><pre><code>wget http://www.openssl.org/source/openssl-1.0.2g.tar.gz
+tar -zxvf popenssl-1.0.2g.tar.gz
+cd openssl-1.0.2g
+./configure
+make &amp;&amp; install
+</code></pre><h3 id="安装Nginx"><a href="#安装Nginx" class="headerlink" title="安装Nginx"></a>安装Nginx</h3><pre><code>wget http://nginx.org/download/nginx-1.8.1.tar.gz
+tar -zxvf nginx-1.8.1.tar.gz
+cd nginx-1.8.1
+</code></pre><h4 id="编译-Nginx-模块"><a href="#编译-Nginx-模块" class="headerlink" title="编译 Nginx 模块"></a>编译 Nginx 模块</h4><pre><code>./configure --prefix=/usr/local/nginx \
+--sbin-path=/usr/local/nginx/nginx \   
+--conf-path=/usr/local/nginx/nginx.conf \  
+--pid-path=/usr/local/nginx/nginx.pid \  
+--with-http_ssl_module \  
+--with-pcre=/root/installTemp/pcre-8.38 \
+--with-zlib=/root/installTemp/zlib-1.2.8 \
+--with-openssl=/root/installTemp/openssl-1.0.2g
+</code></pre><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2>
       
     </div>
 
@@ -444,10 +475,10 @@ Nginx
       
         <ul class="sidebar-nav motion-element">
           <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            Inhaltsverzeichnis
+            Table of Contents
           </li>
           <li class="sidebar-nav-overview" data-target="site-overview">
-            Übersicht
+            Overview
           </li>
         </ul>
       
@@ -464,7 +495,7 @@ Nginx
           <div class="site-state-item site-state-posts">
             <a href="/archives">
               <span class="site-state-item-count">2</span>
-              <span class="site-state-item-name">Artikel</span>
+              <span class="site-state-item-name">posts</span>
             </a>
           </div>
 
@@ -495,7 +526,7 @@ Nginx
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开发环境"><span class="nav-number">1.</span> <span class="nav-text">开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载地址"><span class="nav-number">2.</span> <span class="nav-text">下载地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装环境依赖"><span class="nav-number">3.1.</span> <span class="nav-text">安装环境依赖</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">4.</span> <span class="nav-text">测试</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#开发环境"><span class="nav-number">1.</span> <span class="nav-text">开发环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#下载地址"><span class="nav-number">2.</span> <span class="nav-text">下载地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">3.</span> <span class="nav-text">安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装环境依赖"><span class="nav-number">3.1.</span> <span class="nav-text">安装环境依赖</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#安装zlib"><span class="nav-number">3.1.1.</span> <span class="nav-text">安装zlib</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装pcre"><span class="nav-number">3.1.2.</span> <span class="nav-text">安装pcre</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#安装openssl"><span class="nav-number">3.1.3.</span> <span class="nav-text">安装openssl</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装Nginx"><span class="nav-number">3.2.</span> <span class="nav-text">安装Nginx</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#编译-Nginx-模块"><span class="nav-number">3.2.1.</span> <span class="nav-text">编译 Nginx 模块</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#测试"><span class="nav-number">4.</span> <span class="nav-text">测试</span></a></li></ol></div>
             
           </div>
         </section>
@@ -522,7 +553,7 @@ Nginx
 </div>
 
 <div class="powered-by">
-  Erstellt mit  <a class="theme-link" href="http://hexo.io">Hexo</a>
+  Powered by <a class="theme-link" href="http://hexo.io">Hexo</a>
 </div>
 
 <div class="theme-info">
